@@ -13,10 +13,6 @@ No, Docker requires registries to use HTTPS.
 
     kontena service exec --instance NUM
 
-### What's exit code 143?
-
-Container just exited with the code 143
-
 ## users / rights
 
 ### Can a user with "grid_admin" role create grids and nodes?
