@@ -6,6 +6,13 @@
 
 With `xargs`, see https://github.com/kontena/kontena/issues/2410
 
+
+## Docker
+
+### Does kontena support the current latest docker version?
+
+Propably not, see: See https://www.kontena.io/docs/getting-started/system-requirements.html
+
 ## Stacks
 
 ### Can I expose multiple services in the same stack?
