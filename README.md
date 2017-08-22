@@ -17,7 +17,7 @@ Propably not, see: See https://www.kontena.io/docs/getting-started/system-requir
 
 ### Can I expose multiple services in the same stack?
 
-No, but you can install an LB and expose that.
+No, but you can install a LB in the stack and expose that.
 
 ## Master
 
