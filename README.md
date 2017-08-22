@@ -11,7 +11,7 @@ With `xargs`, see https://github.com/kontena/kontena/issues/2410
 
 ### Does kontena support the current latest docker version?
 
-Propably not, see: See https://www.kontena.io/docs/getting-started/system-requirements.html
+Probably not, see: See https://www.kontena.io/docs/getting-started/system-requirements.html
 
 ## Stacks
 
