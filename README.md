@@ -1,5 +1,16 @@
 # Kontena FAQ
 
+## CLI
+
+### How can I delete multiple nodes / stacks / services ?
+
+With `xargs`, see https://github.com/kontena/kontena/issues/2410
+
+## master
+
+### If you have 3 masters how do the nodes connect to all of them?
+
+Through a LB, see https://www.kontena.io/docs/getting-started/installing/ha-master.html
 
 ## registry
 
