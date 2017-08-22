@@ -9,6 +9,10 @@ No, Docker requires registries to use HTTPS.
 
 ## containers
 
+### Connect to a specific instance of docker container?
+
+    kontena service exec --instance NUM
+
 ### What's exit code 143?
 
 Container just exited with the code 143
