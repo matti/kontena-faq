@@ -6,25 +6,31 @@
 
 With `xargs`, see https://github.com/kontena/kontena/issues/2410
 
-## master
+## Stacks
+
+### Can I expose multiple services in the same stack?
+
+No, but you can install an LB and expose that.
+
+## Master
 
 ### If you have 3 masters how do the nodes connect to all of them?
 
 Through a LB, see https://www.kontena.io/docs/getting-started/installing/ha-master.html
 
-## registry
+## Registry
 
 ### Can I declare an insecure Docker private registry (HTTP) in a Kontena YML stack file?
 
 No, Docker requires registries to use HTTPS.
 
-## containers
+## Containers
 
 ### Connect to a specific instance of docker container?
 
     kontena service exec --instance NUM
 
-## users / rights
+## Users / Rights
 
 ### Can a user with "grid_admin" role create grids and nodes?
 
