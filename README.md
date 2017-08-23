@@ -1,5 +1,13 @@
 # Kontena FAQ
 
+## Agent
+
+### Agent logs warn about LogWorker queue size
+
+`WARN -- Kontena::Workers::LogWorker: queue size is 1600`
+
+Agent can not flush logs fast enough to master, queue size is capped to 1600
+
 ## CLI
 
 ### How can I delete multiple nodes / stacks / services ?
