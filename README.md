@@ -1,5 +1,11 @@
 # Kontena FAQ
 
+## kontena/lb
+
+### Why isn't my link working with a custom image named my-kontena-lb
+
+The magic relies on the name `kontena/lb`, you can not wrap it.
+
 ## Agent
 
 ### Agent logs warn about LogWorker queue size
