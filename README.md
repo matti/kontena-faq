@@ -33,6 +33,8 @@ Probably not, see: See https://www.kontena.io/docs/getting-started/system-requir
 
 No, but you can install a LB in the stack and expose that.
 
+Alternatively when you expose a service (eg. "node"), all instances are accessible as `stack-N`
+
 ## Master
 
 ### If you have 3 masters how do the nodes connect to all of them?
