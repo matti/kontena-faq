@@ -2,6 +2,10 @@
 
 ## kontena/lb
 
+### Can I run have network_mode: host and still link to lb?
+
+no, only containers with a `io.kontena.container.overlay_cidr` get registered, and `network_mode: host` containers don't get that label
+
 ### Why isn't my link working with a custom image named my-kontena-lb
 
 The magic relies on the name `kontena/lb`, you can not wrap it.
