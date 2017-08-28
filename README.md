@@ -4,7 +4,7 @@
 
 ### Can I run have network_mode: host and still link to lb?
 
-no, only containers with a `io.kontena.container.overlay_cidr` get registered, and `network_mode: host` containers don't get that label
+no, only containers with a `io.kontena.container.overlay_cidr` get registered, and `network_mode: host` containers don't get that label https://github.com/kontena/kontena/issues/2741
 
 ### Why isn't my link working with a custom image named my-kontena-lb
 
