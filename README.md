@@ -31,6 +31,51 @@ With `xargs`, see https://github.com/kontena/kontena/issues/2410
 
 Probably not, see: See https://www.kontena.io/docs/getting-started/system-requirements.html
 
+### No logs, but running (until killed because not healthy)
+
+Missing ethwe?
+```
+$ docker exec -it e8400c1a57cd ipaddr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+162938: eth0@if162939: <BROADCAST,MULTICAST,UP,LOWER_UP,M-DOWN> mtu 1500 qdisc noqueue state UP
+    link/ether 02:42:ac:11:00:08 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.8/16 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::42:acff:fe11:8/64 scope link
+       valid_lft forever preferred_lft forever
+```
+
+should look like:
+
+```
+docker exec -it ca3867233285 ipaddr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+686: eth0@if687: <BROADCAST,MULTICAST,UP,LOWER_UP,M-DOWN> mtu 1500 qdisc noqueue state UP
+    link/ether 02:42:ac:11:00:04 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.4/16 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::42:acff:fe11:4/64 scope link
+       valid_lft forever preferred_lft forever
+690: ethwe@if691: <BROADCAST,MULTICAST,UP,LOWER_UP,M-DOWN> mtu 1376 qdisc noqueue state UP
+    link/ether 4a:60:5e:42:7e:cd brd ff:ff:ff:ff:ff:ff
+    inet 10.81.138.108/16 scope global ethwe
+       valid_lft forever preferred_lft forever
+    inet6 fe80::4860:5eff:fe42:7ecd/64 scope link
+       valid_lft forever preferred_lft forever
+```
+
+fix: ??
+
 ## Stacks
 
 ### Can I expose multiple services in the same stack?
