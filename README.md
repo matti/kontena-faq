@@ -1,5 +1,11 @@
 # Kontena FAQ
 
+## etcd
+
+### can kontena run a cluster without etcd?
+
+kind of, internal networking or kontena/lb just won't work.
+
 ## kontena/lb
 
 ### Can I run have network_mode: host and still link to lb?
