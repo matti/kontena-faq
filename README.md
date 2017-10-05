@@ -18,6 +18,14 @@ The magic relies on the name `kontena/lb`, you can not wrap it.
 
 Agent can not flush logs fast enough to master, queue size is capped to 1600
 
+### Can I disable logs completely from choking my master?
+
+Yes, just put:
+```
+logging:
+  driver: none
+```
+
 ## CLI
 
 ### How can I delete multiple nodes / stacks / services ?
