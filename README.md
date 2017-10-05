@@ -8,7 +8,7 @@ no, only containers with a `io.kontena.container.overlay_cidr` get registered, a
 
 ### Why isn't my link working with a custom image named my-kontena-lb
 
-The magic relies on the name `kontena/lb`, you can not wrap it.
+The magic relies on the name `kontena/lb`, if you want to wrap the Kontena LB or bring your own loadbalancer you should put special env variable `KONTENA_SERVICE_ROLE=lb` for the service.
 
 ## Agent
 
