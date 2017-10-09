@@ -32,6 +32,9 @@ logging:
   driver: none
 ```
 
+If errors in agent logs:
+<@jakolehm> ok, it seems that `none` is only available in more recent docker versions
+
 ## CLI
 
 ### How can I delete multiple nodes / stacks / services ?
