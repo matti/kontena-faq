@@ -8,9 +8,9 @@ kind of, internal networking or kontena/lb just won't work.
 
 ### What does IpamError mean?
 
-  Kontena::NetworkAdapters::IpamCleaner: Kontena::NetworkAdapters::IpamError: 503 "Service Unavailable"
+    Kontena::NetworkAdapters::IpamCleaner: Kontena::NetworkAdapters::IpamError: 503 "Service Unavailable"
 
-Unable to connect to the etcd
+Unable to connect to the etcd.
 
 ## kontena/lb
 
@@ -32,7 +32,7 @@ Agent can not flush logs fast enough to master, queue size is capped to 1600
 
 ### waited Ns of 30.0s until...
 
-  Kontena::RpcClient: waited 3.2s of 30.0s until: request /containers/save has response wth id=172071412 yielded Array
+    Kontena::RpcClient: waited 3.2s of 30.0s until: request /containers/save has response wth id=172071412 yielded Array
 
 Master is slowing down
 
