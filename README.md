@@ -24,6 +24,10 @@ The magic relies on the name `kontena/lb`, if you want to wrap the Kontena LB or
 
 ## Agent
 
+### How to restart all agents?
+
+    for i in `seq 1 3`; do kontena container exec -it node-$i.grid.net/kontena-agent kill 1; done
+
 ### Agent logs warn about LogWorker queue size
 
 `WARN -- Kontena::Workers::LogWorker: queue size is 1600`
