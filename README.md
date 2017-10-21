@@ -117,6 +117,10 @@ No, but you can install a LB in the stack and expose that.
 
 Alternatively when you expose a service (eg. "node"), all instances are accessible as `stack-N`
 
+## How can I remove something, like secrets from stack?
+
+Set it to something empty like `secrets: []`
+
 ## Services
 
 ### Does min_health work for services that do not have a healthcheck?
