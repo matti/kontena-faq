@@ -1,5 +1,9 @@
 # Kontena FAQ
 
+## what's the encryption scheme used by Kontena overlay network? (weave)
+
+IPSec/ESP using AES in GCM mode
+
 ## etcd
 
 ### can kontena run a cluster without etcd?
