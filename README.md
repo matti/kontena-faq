@@ -3,6 +3,7 @@
 ## what's the encryption scheme used by Kontena overlay network? (weave)
 
 IPSec/ESP using AES in GCM mode
+more details here: https://github.com/weaveworks/weave/blob/master/docs/fastdp-crypto.md
 
 ## etcd
 
