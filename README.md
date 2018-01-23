@@ -19,6 +19,10 @@ Unable to connect to the etcd.
 
 ## kontena/lb
 
+### Can I see the haproxy config?
+
+`kontena service exec lb/ingress-lb cat /etc/haproxy/haproxy.cfg`
+
 ### Can I run have network_mode: host and still link to lb?
 
 no, only containers with a `io.kontena.container.overlay_cidr` get registered, and `network_mode: host` containers don't get that label https://github.com/kontena/kontena/issues/2741
