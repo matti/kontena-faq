@@ -5,6 +5,27 @@
 IPSec/ESP using AES in GCM mode
 more details here: https://github.com/weaveworks/weave/blob/master/docs/fastdp-crypto.md
 
+## weave
+    2018-01-25T07:53:48.665796695Z Unable to find image 'weaveworks/weavedb:latest' locally
+    2018-01-25T07:53:48.679919775Z latest: Pulling from weaveworks/weavedb
+    2018-01-25T07:53:48.679950835Z 14fea4d3be35: Pulling fs layer
+    2018-01-25T07:53:48.679971883Z 14fea4d3be35: Verifying Checksum
+    2018-01-25T07:53:48.679997638Z 14fea4d3be35: Download complete
+    2018-01-25T07:53:48.680012354Z 14fea4d3be35: Pull complete
+    2018-01-25T07:53:48.680027006Z Digest: sha256:ee08afa34af8773ed4afe122822dad65e713833e59dc7a8e0864fc8bc8fb4a18
+    2018-01-25T07:53:48.680041966Z Status: Downloaded newer image for weaveworks/weavedb:latest
+    2018-01-25T07:53:48.680056767Z The weave container has died. Consult the container logs for further details.
+    2018-01-25T07:53:48.680071696Z
+    2018-01-25T07:53:58.838112088Z W, [2018-01-25T07:53:58.837783 #1]  WARN -- Kontena::NetworkAdapters::Weave: timeout after waiting 10.1s of 10.0s until: weave started
+    2018-01-25T07:54:00.855737259Z E, [2018-01-25T07:54:00.854903 #1] ERROR -- Kontena::NetworkAdapters::WeaveExecutor: weaveexec exit 1: ["--local", "reset"]
+    2018-01-25T07:54:00.855864791Z ERROR: weave is not running; unable to remove from cluster.
+    2018-01-25T07:54:00.870385826Z Re-launch weave before reset or use --force to override.
+    2018-01-25T07:54:00.870412063Z
+    2018-01-25T07:54:08.435244982Z E, [2018-01-25T07:54:08.434921 #1] ERROR -- Kontena::NetworkAdapters::WeaveExecutor: weaveexec exit 1: ["--local", "launch-router", "--ipalloc-range", "", "--dns-domain", "kontena.local", "--password", "<redacted>", "--conn-limit", "0", "--trusted-subnets", ""]
+    2018-01-25T07:54:08.435412281Z The weave container has died. Consult the container logs for further details.
+
+Check that weave can bind ports like 53.
+
 ## etcd
 
 ### can kontena run a cluster without etcd?
