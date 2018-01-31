@@ -29,8 +29,9 @@ Check that weave can bind ports like 53.
 ## etcd
 
 ### can kontena run a cluster without etcd?
+### What is the consequence of the majority of the initial nodes going down ?
 
-kind of, internal networking or kontena/lb just won't work.
+Internal networking or kontena/lb won't work and new deployments will fail.
 
 ### What does IpamError mean?
 
