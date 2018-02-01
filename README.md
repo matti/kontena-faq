@@ -5,6 +5,10 @@
 IPSec/ESP using AES in GCM mode
 more details here: https://github.com/weaveworks/weave/blob/master/docs/fastdp-crypto.md
 
+## Is the traffic encrypted between nodes in the same region that communicate with their private IP ?
+
+by default yes. you can disable encryption for a certain private subnet using `kontena grid trusted-subnet add 1.2.3.4/24`
+
 ## weave
     2018-01-25T07:53:48.665796695Z Unable to find image 'weaveworks/weavedb:latest' locally
     2018-01-25T07:53:48.679919775Z latest: Pulling from weaveworks/weavedb
