@@ -93,6 +93,14 @@ If errors in agent logs:
 With `xargs`, see https://github.com/kontena/kontena/issues/2410
 
 
+### Accidentally removed ~/.kontena_client.json
+
+The file is generated in login:
+
+When self-hosted: `$ kontena master login ...`
+When using cloud: `$ kontena cloud platform use ...`
+
+
 ## Docker
 
 ### Does kontena support the current latest docker version?
