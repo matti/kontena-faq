@@ -164,6 +164,13 @@ Alternatively when you expose a service (eg. "node"), all instances are accessib
 
 Set it to something empty like `secrets: []`
 
+## links vs depends_on
+
+>I don't understand what "links" (https://kontena.io/docs/using-kontena/stack-file.html#linking-kontena-services) really does for a service. The only use case that is explained in the docs (that I could find) is linking to a load balancer. What else can it do?
+
+It sets the deploy order like `depends_on`, nothing else. `links` is also being deprecated in docker-compose.
+
+
 ## Services
 
 ### Does min_health work for services that do not have a healthcheck?
