@@ -1,5 +1,9 @@
 # Kontena FAQ
 
+## how is the deploy calculated
+
+from the last deploy, it triggers a regular deploy so for example min_health is respected
+
 ## what's the encryption scheme used by Kontena overlay network? (weave)
 
 IPSec/ESP using AES in GCM mode
